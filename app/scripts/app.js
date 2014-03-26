@@ -17,6 +17,10 @@ angular.module('angularApp', [
         templateUrl: 'views/todos.html',
         controller: 'ListTodoCtrl'
       })
+      .when('/todo/new', {
+        templateUrl: 'views/add.html',
+        controller: 'AddTodoCtrl'
+      })
       .when('/todo/:id', {
         templateUrl: 'views/todo.html',
         controller: 'ShowTodoCtrl'

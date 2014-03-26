@@ -1,0 +1,10 @@
+<div>
+  {{message}}
+</div>
+<form name="new_todo" novalidate ng-submit="save()" class="css-form">
+  <label>Tittel: <input type="text" required ng-minlength="10" ng-model="title"/></label><br/>
+  <label>Beskrivelse: <input type="textarea" required ng-minlength="10" maxlength="1000" ng-model="description"/></label><br/>
+  <label>Due date (YYYY-MM-DD): <input type="date" required ng-pattern="/[0-9]{4}-[0-9]{2}-[0-9]{2}/" ng-model="due_date"/></label><br/>
+  <input type="submit" value="Lagre"/>
+</form>
+
