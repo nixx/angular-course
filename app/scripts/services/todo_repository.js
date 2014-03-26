@@ -7,8 +7,8 @@ angular.module('services', ['ngResource'])
       find: function() {
         return todo.query();
       },
-      get: function(id) {
-        return todo.get({id: id});
+      get: function(todoId) {
+        return todo.get({todoId: todoId});
       }
     };
   });
