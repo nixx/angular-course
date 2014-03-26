@@ -1,0 +1,8 @@
+[{
+  "context": "/api/todo",
+  "host": "localhost",
+  "port": 3000,
+  "rewrite": {
+    "^/api": ""
+  }
+}]
