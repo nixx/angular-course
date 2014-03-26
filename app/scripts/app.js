@@ -12,6 +12,10 @@ angular.module('angularApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/todos', {
+        templateUrl: 'views/todos.html',
+        controller: 'ListTodoCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
