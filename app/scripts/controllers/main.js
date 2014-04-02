@@ -1,5 +1,5 @@
 'use strict';
 
 angular.module('angularApp')
-  .controller('MainCtrl', function ($scope) {
-  });
+  .controller('MainCtrl', function () {
+});
