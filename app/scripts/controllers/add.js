@@ -1,24 +1,24 @@
 'use strict';
 
 angular.module('angularApp').
-  controller('AddTodoCtrl', function($scope, todoRepository, $routeParams) {
+  controller('AddTodoCtrl', function($scope, todoRepository) {
     $scope.title = '';
     $scope.description = '';
-    $scope.due_date = '';
+    $scope.dueDate = '';
     $scope.message = '';
 
     $scope.save = function() {
-      var new_todo = {
+      var newTodo = {
         title: angular.copy($scope.title),
         description: angular.copy($scope.description),
-        due_date: angular.copy($scope.due_date)
+        dueDate: angular.copy($scope.dueDate)
       };
-      var promise = todoRepository.save(new_todo,
+      todoRepository.save(newTodo,
         function() {
           $scope.message = 'Saved!!';
         },
         function() {
           $scope.message = 'Failed!';
-      });
+        });
     };
   });

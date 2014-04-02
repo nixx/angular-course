@@ -10,8 +10,8 @@ angular.module('services', ['ngResource'])
       get: function(todoId) {
         return Todo.get({todoId: todoId});
       },
-      save: function(new_todo, success, error) {
-        new Todo(new_todo).$save(success, error);
+      save: function(newTodo, success, error) {
+        new Todo(newTodo).$save(success, error);
       }
     };
   });

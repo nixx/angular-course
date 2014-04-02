@@ -2,4 +2,4 @@
 
 angular.module('angularApp')
   .controller('MainCtrl', function () {
-  });
+});
