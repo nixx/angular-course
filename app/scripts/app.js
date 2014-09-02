@@ -28,4 +28,9 @@ angular.module('angularApp', [
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .directive('topmenu', function() {
+    return {
+      template: '<a href="/#/todos">List</a> <a href="/#/todo/new">Ny</a>'
+    };
   });
